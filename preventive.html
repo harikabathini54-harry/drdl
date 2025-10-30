@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>preventive maintenance</title>
+    <link rel="stylesheet" href="calibration_style.css">
+</head>
+<body>
+    <form id="preventive" name="formcheck">
+    <center>
+        <h1>Preventive Maintenance</h1>
+        <div>
+        <div class="option-item">
+        <input type="radio" id="list_schedule" name="check" value="list">
+        <label for="list_schedule">Preventive Maintenance Schedule</label>
+        </div>
+        </div>
+        <div class="options">
+        <div class="option-item">
+        <input type="radio" id="checklist1" name="check" value="m_check">
+        <label for="checklist1">Maintenance Checklist 1</label>
+        </div>
+        <div class="option-item">
+        <input type="radio" id="checklist2" name="check" value="m2_check">
+        <label for="checklist1">Maintenance Checklist 2</label>
+        </div>
+        <div>
+            <button>submit</button>
+        </div>
+    </center>
+    <script>
+        const form = document.getElementById('preventive');
+        form.addEventListener('submit', function(event) {
+            const selected = document.querySelector('input[name="check"]:checked');
+            if (!selected) {
+                alert("Please select an option!");
+                event.preventDefault();
+                return;
+            }
+            if (selected.value === "list") {
+                form.action = "list_schedule.html";
+            } else if (selected.value === "m_check") {
+                form.action = "checklist1.html";
+            } else if (selected.value === "m2_check") {
+                form.action = "checklist2.html";
+            }
+        });
+    </script>
+</form>
+</body>
+</html>
