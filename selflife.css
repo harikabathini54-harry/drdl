@@ -1,4 +1,3 @@
-
 body {
     background: linear-gradient(135deg, #e6f0ff, #b3d9ff);
     font-family: "Poppins", sans-serif;
@@ -6,19 +5,52 @@ body {
     margin: 0;
     padding: 0;
 }
-
-
-h1 {
-    text-align: center;
-    color: #003366;
-    font-size: 2rem;
-    text-transform: uppercase;
-    letter-spacing: 1px;
-    margin-top: 50px;
-    text-decoration: underline #007acc;
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: linear-gradient(135deg, #cce6ff, #e6f2ff);
+    border: 2px solid #b3d9ff;
+    border-radius: 12px;
+    padding: 15px 30px;
+    width: 85%;
+    margin: 30px auto 40px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
 }
 
-
+.logo img {
+    width: 110px;
+    height: auto;
+    border-radius: 8px;
+    border: 2px solid #f3f4f5;
+    background-color: #ffffff;
+    padding: 5px;
+}
+.title {
+    text-align: center;
+}
+.title h1 {
+    margin: 0;
+    color: #003366;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    text-decoration: underline #007acc;
+}
+.sub-info {
+    display: flex;
+    justify-content: space-between;
+    width: 80%;
+    margin: 8px auto 0;
+    font-size: 0.95rem;
+    color: #004080;
+    font-weight: 500;
+    letter-spacing: 0.5px;
+}
+.sub-info span {
+    flex: 1;
+    text-align: center;
+}
 table {
     border-collapse: collapse;
     margin: 40px auto;
@@ -43,8 +75,6 @@ td {
     background-color: #f9f9f9;
     text-align: center;
 }
-
-/* Input Fields */
 input {
     width: 95%;
     padding: 8px;
@@ -55,14 +85,11 @@ input {
     text-align: center;
     transition: border-color 0.3s, box-shadow 0.3s;
 }
-
 input:focus {
     border-color: #007acc;
     box-shadow: 0 0 5px rgba(0, 122, 204, 0.4);
     outline: none;
 }
-
-/* Button Styling */
 button {
     display: block;
     padding: 12px 30px;
@@ -84,6 +111,16 @@ button:hover {
 
 /* Responsive Design */
 @media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        text-align: center;
+        gap: 10px;
+    }
+
+    .logo img {
+        width: 80px;
+    }
+
     table {
         width: 95%;
     }
