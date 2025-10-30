@@ -1,0 +1,102 @@
+    body {
+        font-family: "Poppins", sans-serif;
+        background: linear-gradient(135deg, #e6f0ff, #aecded);
+        margin: 0;
+        padding: 0;
+        text-align: center;
+    }
+    .header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding: 20px 60px;
+        background-color: #0877d8;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    }
+
+    .logo img {
+        width: 150px;
+        height: auto;
+    }
+        .logo.right img {
+        height: 150px;   
+        width: auto;
+    }
+
+        .title h1 {
+        color: #f0f1f1;
+        font-size: 2rem;
+        margin: 0;
+        text-transform: uppercase;
+        }
+
+        .sub-info {
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+        font-weight: 600;
+        color: #ebe6e6;
+        margin-top: 5px;
+    }
+    .options {
+        margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 15px;
+    }
+
+        .option-item {
+        background: #ffffff;
+        border: 2px solid #007acc;
+        border-radius: 10px;
+        padding: 12px 25px;
+        width: 350px;
+        text-align: left;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        transition: all 0.3s ease;
+        }
+
+        .option-item:hover {
+        background-color: #e6f2ff;
+        transform: scale(1.03);
+        }
+
+        label {
+        font-weight: 600;
+        color: #003366;
+        margin-left: 10px;
+        }
+
+    
+    button {
+        margin-top: 30px;
+        background-color: #007acc;
+        color: white;
+        padding: 12px 30px;
+            border: none;
+        border-radius: 25px;
+        font-size: 16px;
+        cursor: pointer;
+        transition: all 0.3s ease;
+    }
+
+    button:hover {
+    background-color: #005f99;
+    transform: scale(1.05);
+    }
+
+    @media (max-width: 768px) {
+    .header {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .logo img {
+        width: 80px;
+    }
+
+    .option-item {
+        width: 80%;
+    }
+    }
