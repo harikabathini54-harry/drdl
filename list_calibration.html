@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>list of Equipments</title>
+    <link rel="stylesheet" href="list_calibration.css">
+</head>
+<body>
+    <div class="header">
+            <div class="logo"><img src="left_logo.png" alt="Left Logo"></div>
+
+            <div class="title">
+                <h1>List Of Equipments</h1>
+                <div class="sub-info">
+                    <span>DCPM/F-03</span>
+                    <span>REV.NO-00</span>
+                    <span>PAGE:1OF1</span>
+                </div>
+            </div>
+
+            <div class="logo"><img src="right_logo.png" alt="Right Logo"></div>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>S.No</th>
+                    <th>Name of the Equipment</th>
+                    <th>Make</th>
+                    <th>ID.NO</th>
+                    <th>RANGE</th>
+                    <th>Acceptance Criteria</th>
+                    <th>Frequency of calibration</th>
+                    <th>Calibration Agency</th>
+                    <th>Date of Calibration</th>
+                    <th>Calibration Due Date</th>
+                    <th>Recall Date</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="text" name="eqpt_no"></td>
+                    <td><input type="text" name="name"></td>
+                    <td><input type="text" name="Make"></td>
+                    <td><input type="text" name="id_no"></td>
+                    <td><input type="text" name="range"></td>
+                    <td><input type="text" name="acceptance"></td>
+                    <td><input type="text" name="frequency"></td>
+                    <td><input type="text" name="agency"></td>
+                    <td><input type="text" name="date_cal"></td>
+                    <td><input type="text" name="due_date"></td>
+                    <td><input type="text" name="recall_date"></td>
+                </tr>
+            </tbody>
+        </table>
+        <button type="button" onclick="addRow()">+ Add Equipment</button>
+        <button type="submit">Submit</button>
+    </form>
+    <script>
+function addRow() {
+    const table = document.querySelector("table tbody");
+    const rowCount = table.rows.length + 1;
+
+    const newRow = document.createElement("tr");
+        newRow.innerHTML = `
+        <td>${rowCount}</td>
+        <td><input type="text" name="name"></td>
+        <td><input type="text" name="Make"></td>
+        <td><input type="text" name="id_no"></td>
+        <td><input type="text" name="range"></td>
+        <td><input type="text" name="acceptance"></td>
+        <td><input type="text" name="frequency"></td>
+        <td><input type="text" name="agency"></td>
+        <td><input type="text" name="date_cal"></td>
+        <td><input type="text" name="due_date"></td>
+        <td><input type="text" name="recall_date"></td>
+`;
+table.appendChild(newRow);
+}
+</script>
+
+</body>
+</html>
+
+</body>
+</html>
