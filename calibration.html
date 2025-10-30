@@ -14,6 +14,12 @@
         <h2>
             Name of the Directorate/Division/Work centre:
         </h2>
+        <div class="option-item">
+        <input type="radio" id="list_calibration" name="cal" value="list">
+        <label for="calibrate3">List of Equipments</label>
+        </div>
+        </div>
+        <div>
         </div>
         <div class="options">
         <div class="option-item">
@@ -25,36 +31,25 @@
         <input type="radio" id="calibrate2" name="cal" value="maintenance">
         <label for="calibrate2">Maintenance of equipment and facilities</label>
         </div>
-
-        <div class="option-item">
-        <input type="radio" id="calibrate3" name="cal" value="both">
-        <label for="calibrate3">Both</label>
-        </div>
-        </div>
         <div>
             <button>submit</button>
         </div>
     </center>
     <script>
-        const form=document.getElementById('calibration_form')
-        form.addEventListener('submit', function(event){
+    const form = document.getElementById('calibration_form');
+    form.addEventListener('submit', function(event) {
         const selected = document.querySelector('input[name="cal"]:checked');
-            if (!selected) {
-                alert("Please select an option!");
-                event.preventDefault();
-                return;
-                }
-            if (selected.value === "calibration") {
-                form.action = "calibration1.html";
-                }
-            else if (selected.value === "maintenance") {
-                form.action = "calibration2.html";
-                }
-            else if (selected.value === "both") {
-                form.action = "both_calibration.html";
-                }
-            });
-    </script>
-</form>
-</body>
-</html>
+        if (!selected) {
+            alert("Please select an option!");
+            event.preventDefault();
+            return;
+        }
+        if (selected.value === "calibration") {
+            form.action = "calibration1.html";
+        } else if (selected.value === "maintenance") {
+            form.action = "calibration2.html";
+        } else if (selected.value === "list") {
+            form.action = "list_calibration.html";
+        }
+    });
+</script>
