@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Preventive Maintenance Checklist</title>
+    <style>
+        body {
+    background: linear-gradient(135deg, #e6f0ff, #b3d9ff);
+    font-family: "Poppins", sans-serif;
+    color: #1a1a1a;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    min-height: 100vh;
+}
+
+/* --- Heading --- */
+h1 {
+    color: #003366;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+    text-align: center;
+    text-decoration: underline #007acc;
+}
+
+/* --- Options Section --- */
+.options {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    background-color: #ffffff;
+    padding: 30px 40px;
+    border-radius: 12px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    width: 80%;
+    max-width: 600px;
+}
+
+.option-item {
+    display: flex;
+    align-items: center;
+    margin-bottom: 18px;
+    font-weight: 600;
+    font-size: 1rem;
+    color: #003366;
+}
+
+.option-item input[type="radio"] {
+    accent-color: #007acc;
+    margin-right: 10px;
+    transform: scale(1.2);
+}
+
+/* --- Button Styling --- */
+button {
+    display: block;
+    padding: 12px 30px;
+    font-size: 16px;
+    background-color: #007acc;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 30px auto 50px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #005f99;
+    transform: scale(1.05);
+}
+
+/* --- Responsive Design --- */
+@media (max-width: 768px) {
+    .options {
+        width: 90%;
+        padding: 20px;
+    }
+    button {
+        width: 80%;
+        font-size: 15px;
+    }
+}
+    </style>
+</head>
+<body>
+
+<div class="form-details">
+    <strong>DOC NO.: DOE/PED/F-03</strong><br>
+    <strong>ISSUE NO.: 02</strong><br>
+    <strong>REV.NO.: 00, Dated 04.10.2021</strong>
+</div>
+
+<div class="machine-details">
+    <div class="machine-details-left">
+        <p><label><strong>M/c Name:</strong></label><input type="text"></p>
+        <p><label><strong>Serial No.:</strong></label><input type="text"></p>
+    </div>
+    <div class="machine-details-right">
+        <p><label><strong>Work centre:</strong></label><input type="text"></p>
+        <p><label><strong>Date:</strong></label><input type="text"></p>
+    </div>
+</div>
+
+<div class="heading">
+    PREVENTIVE MAINTENANCE CHECK LIST / OBSERVATION SHEET
+</div>
+
+<table>
+    <tr>
+        <th colspan="2" style="text-align:left;">MECHANICAL:</th>
+        <th colspan="2">CHECK STATUS</th>
+        <th rowspan="2">REMARKS</th>
+    </tr>
+    <tr>
+        <th>SL. NO.</th>
+        <th>ACTIVITY</th>
+        <th>OK</th>
+        <th>NOT OK</th>
+    </tr>
+
+    <!-- Section 1 -->
+    <tr><td><strong>1.0</strong></td><td><strong>LUBRICATION SYSTEM</strong></td><td></td><td></td><td></td></tr>
+    <tr><td>1.1</td><td>Check lubrication system for proper functioning</td><td></td><td></td><td></td></tr>
+    <tr><td>1.2</td><td>Clean / Replace the filter</td><td></td><td></td><td></td></tr>
+    <tr><td>1.3</td><td>Top up oil level in lube tank</td><td></td><td></td><td></td></tr>
+    <tr><td>1.4</td><td>Check Lube Time and Duration</td><td></td><td></td><td></td></tr>
+    <tr><td>1.5</td><td>Check the oil leakage & prevent them, if noticed</td><td></td><td></td><td></td></tr>
+
+    <!-- Section 2 -->
+    <tr><td><strong>2.0</strong></td><td><strong>SPINDLE</strong></td><td></td><td></td><td></td></tr>
+    <tr><td>2.1</td><td>Lubricate the spindle with recommended lubricants</td><td></td><td></td><td></td></tr>
+    <tr><td>2.2</td><td>Check the spindle for its free movement</td><td></td><td></td><td></td></tr>
+
+    <!-- Section 3 -->
+    <tr><td><strong>3.0</strong></td><td><strong>AXES & SLIDES</strong></td><td></td><td></td><td></td></tr>
+    <tr><td>3.1</td><td>Check the Axis movement and Check the Axis noise in rapid movement.</td><td></td><td></td><td></td></tr>
+    <tr><td>3.2</td><td>Check Slide Seals, Inspect covers/Guards & wipers</td><td></td><td></td><td></td></tr>
+    <tr><td>3.3</td><td>Ensure Lubrication on Slides / Ball Screw</td><td></td><td></td><td></td></tr>
+    <tr><td>3.4</td><td>Clean all Gibs and Slides for smooth operation</td><td></td><td></td><td></td></tr>
+    <tr><td>3.5</td><td>Check Coupling, Belt Condition & Tension</td><td></td><td></td><td></td></tr>
+
+    <!-- Section 4 -->
+    <tr><td><strong>4.0</strong></td><td><strong>TRANSMISSION SYSTEM FOR CNC MACHINES</strong></td><td></td><td></td><td></td></tr>
+    <tr><td>4.1</td><td>Check the belt tension condition, adjust or replace accordingly</td><td></td><td></td><td></td></tr>
+    <tr><td>4.2</td><td>Observe noise / missing transmission at couplings, Gearing (wherever applicable /rectify if required)</td><td></td><td></td><td></td></tr>
+    <tr><td>4.3</td><td>Check the dust wipers on either side of the ball or lead screw</td><td></td><td></td><td></td></tr>
+
+    <!-- Section 5 -->
+    <tr><td><strong>5.0</strong></td><td><strong>HYDRAULIC & PNEUMATIC SYSTEM</strong></td><td></td><td></td><td></td></tr>
+    <tr><td>5.1</td><td>Clean / Replace the filters</td><td></td><td></td><td></td></tr>
+    <tr><td>5.2</td><td>Check the oil level and its condition replace or top up to the specified level</td><td></td><td></td><td></td></tr>
+    <tr><td>5.3</td><td>Check the pressure for its proper setting and adjust if necessary</td><td></td><td></td><td></td></tr>
+    <tr><td>5.4</td><td>Check for proper functioning of pressure gauges</td><td></td><td></td><td></td></tr>
+    <tr><td>5.5</td><td>Prevent all leakages (air / oil)</td><td></td><td></td><td></td></tr>
+</table>
+
+
+<div style="text-align: right; margin-top: 40px;">
+    <p><strong>Signature</strong><br>OIC, PED</p>
+</div>
+
+
+<div class="certificate-box">
+    <strong>Certificate</strong><br>
+    The machine is working satisfactorily after Preventive maintenance. The requirement may be treated as completed.
+</div>
+
+
+<div style="text-align: right; margin-top: 20px;">
+    <p><strong>Signature</strong><br>O I/C Work Centre</p>
+</div>
+
+</body>
+</html>
