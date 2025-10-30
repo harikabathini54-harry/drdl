@@ -4,31 +4,50 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Selflife</title>
-    <link rel="stylesheet" href="selflife.css"
+    <link rel="stylesheet" href="selflife.css">
 </head>
-<body><form action="./server"><center>
-    <h1>List Of Self Life Items</h1></center>
-    <table>
-        <thead>
-            <th >S.No</th>
-            <th>Item Discription</th>
-            <th>Shelf Life/Expiry Date</th>
-            <th>Quanty</th>
-            <th>Disposal Mechanism</th>
-            <th>remarks</th>
-        </thead>
-    <tbody>
-        <tr>
-            <td><input type="text" name="itemno"style="width: 100px;"></td>
-            <td><input type="text" name="itemno"style="width: 100px;"></td>
-            <td><input type="text" name="itemno"style="width: 100px;"></td>
-            <td><input type="text" name="itemno"style="width: 100px;"></td>
-            <td><input type="text" name="itemno"style="width: 100px;"></td>
-            <td><input type="text" name="itemno"style="width: 100px;"></td>
-        </tr>
-    </tbody>
-    </table>
-    <button type="submit">submit</button>
-</form>
+<body>
+    <form action="./server">
+
+        <div class="header">
+            <div class="logo"><img src="left_logo.png" alt="Left Logo"></div>
+
+            <div class="title">
+                <h1>List Of Self Life Items</h1>
+                <div class="sub-info">
+                    <span>DCPM/F-11</span>
+                    <span>REV.NO-00</span>
+                    <span>PAGE:1 OF 1</span>
+                </div>
+            </div>
+
+            <div class="logo"><img src="right_logo.png" alt="Right Logo"></div>
+        </div>
+
+        <table>
+            <thead>
+                <tr>
+                    <th>S.No</th>
+                    <th>Item Description</th>
+                    <th>Shelf Life / Expiry Date</th>
+                    <th>Quantity</th>
+                    <th>Disposal Mechanism</th>
+                    <th>Remarks</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td><input type="text" name="itemno"></td>
+                    <td><input type="text" name="description"></td>
+                    <td><input type="text" name="expiry"></td>
+                    <td><input type="text" name="quantity"></td>
+                    <td><input type="text" name="disposal"></td>
+                    <td><input type="text" name="remarks"></td>
+                </tr>
+            </tbody>
+        </table>
+
+        <button type="submit">Submit</button>
+    </form>
 </body>
 </html>
