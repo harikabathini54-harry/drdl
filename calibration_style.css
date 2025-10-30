@@ -1,0 +1,119 @@
+/* ===== Page Layout ===== */
+body {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;     /* vertical centering */
+    align-items: center;         /* horizontal centering */
+    background: linear-gradient(135deg, #cfe9ff, #80bfff);
+    font-family: "Poppins", sans-serif;
+    min-height: 100vh;
+    margin: 0;
+    padding: 20px;
+    color: #0a0a0a;
+}
+
+/* ===== Main Heading ===== */
+h1 {
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: #0d47a1;
+    text-transform: uppercase;
+    letter-spacing: 1.5px;
+    padding-bottom: 15px;
+    margin-top: 0;
+    margin-bottom: 10px;
+    text-shadow: 1px 1px 3px rgba(13, 71, 161, 0.2);
+}
+
+/* ===== Form Container ===== */
+form {
+    background-color: #ffffff;
+    padding: 40px 50px;
+    border-radius: 15px;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    width: 85%;
+    max-width: 600px;
+}
+
+/* ===== Options Section ===== */
+.options {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 15px;
+    padding-top: 25px;
+    width: 100%;
+}
+
+/* ===== Individual Option ===== */
+.option-item {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #f4f9ff;
+    border: 1px solid #c9e1ff;
+    border-radius: 8px;
+    padding: 12px 15px;
+    width: 100%;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.option-item:hover {
+    background-color: #e3f2fd;
+    transform: scale(1.02);
+}
+
+/* ===== Radio Buttons ===== */
+input[type="radio"] {
+    accent-color: #1976d2;
+    transform: scale(1.2);
+    cursor: pointer;
+}
+
+/* ===== Labels ===== */
+.options label {
+    color: #1a1a1a;
+    font-weight: 500;
+    font-size: 1rem;
+    cursor: pointer;
+}
+
+/* ===== Button Styling ===== */
+button {
+    display: block;
+    margin: 30px auto 10px;
+    padding: 12px 35px;
+    font-size: 1rem;
+    font-weight: 600;
+    background-color: #1976d2;
+    color: white;
+    border: none;
+    border-radius: 30px;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    box-shadow: 0 4px 10px rgba(25, 118, 210, 0.3);
+}
+
+button:hover {
+    background-color: #0d47a1;
+    transform: scale(1.05);
+    box-shadow: 0 6px 15px rgba(13, 71, 161, 0.4);
+}
+
+/* ===== Responsive Layout ===== */
+@media (max-width: 600px) {
+    form {
+        width: 90%;
+        padding: 30px;
+    }
+
+    h1 {
+        font-size: 1.6rem;
+    }
+
+    label {
+        font-size: 0.95rem;
+    }
+}

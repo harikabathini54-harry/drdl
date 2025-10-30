@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calibratio_1</title>
+    <link rel="stylesheet" href="calibration_style.css">
+</head>
+<body>
+    <form id="calibration_form" name="formcal">
+    <center>
+        <h1>CALIBRATION</h1>
+        <div>
+        <h2>
+            Name of the Directorate/Division/Work centre:
+        </h2>
+        </div>
+        <div class="options">
+        <div class="option-item">
+        <input type="radio" id="calibrate1" name="cal" value="calibration">
+        <label for="calibrate1">Calibration of Monitoring and Measuring Equipment/Instrument</label>
+        </div>
+
+        <div class="option-item">
+        <input type="radio" id="calibrate2" name="cal" value="maintenance">
+        <label for="calibrate2">Maintenance of equipment and facilities</label>
+        </div>
+
+        <div class="option-item">
+        <input type="radio" id="calibrate3" name="cal" value="both">
+        <label for="calibrate3">Both</label>
+        </div>
+        </div>
+        <div>
+            <button>submit</button>
+        </div>
+    </center>
+    <script>
+        const form=document.getElementById('calibration_form')
+        form.addEventListener('submit', function(event){
+        const selected = document.querySelector('input[name="cal"]:checked');
+            if (!selected) {
+                alert("Please select an option!");
+                event.preventDefault();
+                return;
+                }
+            if (selected.value === "calibration") {
+                form.action = "calibration1.html";
+                }
+            else if (selected.value === "maintenance") {
+                form.action = "calibration2.html";
+                }
+            else if (selected.value === "both") {
+                form.action = "both_calibration.html";
+                }
+            });
+    </script>
+</form>
+</body>
+</html>

@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>calibration1</title>
+    <link rel="stylesheet" href="calbration1.css"
+</head>
+<body><form action="./server">
+    <table border="2">
+    <thead>
+        <th> S.NO </th>
+        <th colspan="2" style="width: 300px;">Maintenance of equipment and facilities</th>
+    </thead>
+    <tbody>
+        <tr>
+            <td>1</td>
+            <td>Type</td>
+            <td>
+            <input type="text" id="typo" name="type" placeholder="Preventive/Breakdown" style="width: 300px;">
+            </td>
+        </tr>
+
+        <tr>
+            <td>2</td>
+            <td>Work order reference/Taskno</td>
+            <td><input type="text"id="taskno"placeholder="taskno" name="work"style="width: 300px;"></td>
+        </tr>
+        <tr><td>3</td>
+            <td>Date of initiation</td>
+            <td><input type="text" name="initial"style="width: 300px;"></td>
+        <tr><td>4</td>
+            <td>Discription of work</td>
+            <td><input type="text" name="recall"style="width: 300px;"></td>
+        </tr>
+        </tr>
+        <tr><td>5</td>
+            <td>Instrument no</td>
+            <td><input type="text"id="no"placeholder="serialno/machineno" name="num"style="width: 300px;"></td>
+        </tr>
+        <tr><td>6</td>
+            <td>Reason for Breakdown</td>
+            <td><input type="text" name="validity"style="width: 300px;"></td>
+        </tr>
+        </tr>
+        <tr><td>7</td>
+            <td>Date of maintenance</td>
+            <td><input type="text" name="validity"style="width: 300px;"></td>
+        </tr>
+        <tb><td>8</td>
+            <td>Due Date of maintenance</td>
+            <td><input type="text" name="itemno"style="width: 300px;"></td>
+        <tr><td>9</td>
+            <td>Recall Date</td>
+            <td><input type="text" name="recall"style="width: 300px;"></td>
+        </tr>
+        <tr><td>10</td>
+            <td>Calibration by which agency</td>
+            <td><input type="text"id="c_agency"placeholder="internal/external" name="agency"style="width: 300px;"></td>
+        </tr>
+        <tr><td>11</td>
+            <td>Name Of The Agency</td>
+            <td><input type="text" name="ag_name"style="width: 300px;"></td>
+        </tr>
+        <tr><td>12</td>
+            <td>Reference Of Certificate Of Calibration</td>
+            <td><input type="text" name="reference"style="width: 300px;"></td>
+        </tr>
+        <tr><td>13</td>
+            <td>Equipment:</td>
+            <td><input type="text"id="update"placeholder="accepted/rejected" name="updated"style="width: 300px;"></td>
+        </tr>
+        <tr><td>14</td>
+            <td>Maintence Sticker/Label Updation</td>
+            <td><input type="text"id="sticker"placeholder="yes/no" name="status"style="width: 300px;"></td>
+        </tr>
+        <tr><td>15</td>
+            <td>Name Of Incharge/System manager</td>
+            <td><input type="text" name="name_manager"style="width: 300px;"></td>
+        </tr>
+        <tr><td>16</td>
+            <td>Name of the Division Head/Technology Director</td>
+            <td><input type="text" name="validity"style="width: 300px;">
+        </td>
+        </tr>
+    </tbody>
+    </table>
+    <div>
+        <button type="submit" class="sub">submit</button>
+    </div>
+    </form>
+</body>
+</html>

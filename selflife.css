@@ -1,0 +1,99 @@
+
+body {
+    background: linear-gradient(135deg, #e6f0ff, #b3d9ff);
+    font-family: "Poppins", sans-serif;
+    color: #1a1a1a;
+    margin: 0;
+    padding: 0;
+}
+
+
+h1 {
+    text-align: center;
+    color: #003366;
+    font-size: 2rem;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 50px;
+    text-decoration: underline #007acc;
+}
+
+
+table {
+    border-collapse: collapse;
+    margin: 40px auto;
+    width: 80%;
+    max-width: 900px;
+    background-color: #ffffff;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+th {
+    background-color: #007acc;
+    color: white;
+    padding: 12px;
+    font-size: 1rem;
+}
+
+td {
+    padding: 10px;
+    border-bottom: 1px solid #ddd;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+/* Input Fields */
+input {
+    width: 95%;
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 6px;
+    background-color: #f0f8ff;
+    font-size: 0.95rem;
+    text-align: center;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+input:focus {
+    border-color: #007acc;
+    box-shadow: 0 0 5px rgba(0, 122, 204, 0.4);
+    outline: none;
+}
+
+/* Button Styling */
+button {
+    display: block;
+    padding: 12px 30px;
+    font-size: 16px;
+    background-color: #007acc;
+    color: white;
+    border: none;
+    border-radius: 25px;
+    cursor: pointer;
+    margin: 20px auto 50px;
+    transition: all 0.3s ease;
+    font-weight: bold;
+}
+
+button:hover {
+    background-color: #005f99;
+    transform: scale(1.05);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    table {
+        width: 95%;
+    }
+
+    th, td {
+        font-size: 0.9rem;
+        padding: 8px;
+    }
+
+    input {
+        width: 90%;
+    }
+}
